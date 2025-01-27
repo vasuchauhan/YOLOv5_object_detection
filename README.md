@@ -66,6 +66,24 @@ Results will include:
 
 ---
 
+## Understanding the Results
+
+The model detects 80 different classes of objects, including:
+- People
+- Vehicles (cars, trucks, bicycles)
+- Animals (dogs, cats, birds)
+- Common objects (chairs, tables, phones)
+
+For each detection, we get:
+1. Class name (what was detected)
+2. Confidence score (how sure the model is)
+3. Bounding box (where the object is in the image)
+
+The confidence threshold (default 0.25) determines how confident the model needs to be to report a detection. You can adjust this value:
+- Higher values (e.g., 0.5) give fewer but more confident detections
+- Lower values (e.g., 0.1) give more detections but might include false positives
+
+
 ## Notes
 
 - We can add more images to the `images` directory and process them using the notebook.
